@@ -8,7 +8,22 @@
 <script>
     let a = prompt('a');
     let b = prompt('c');
-    let c = prompt('d');
+    let c = prompt('c');
+    a = parseInt(a)
+    b = parseInt(b)
+    c = parseInt(c)
+    if ((a+b>c) && (b+c>a) && (a+c>b)){
+        alert("DAY LA TAM GIAC");
+        if (a==b || a==c || b==c)
+            alert("TAM GIAC CAN");
+        if (a==b&&b==c)
+            alert("TAM GIAC DEU");
+        if ( a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b)
+            alert("TAM GIAC VUONG");
+    }
+    else {
+        alert("KHONG PHAI TAM GIAC");
+    }
 
 </script>
 </body>
